@@ -83,6 +83,14 @@ void loop() {
     case 128: //guest team scores
       points[1]++;
       break;
+    case 2: //decrease home team score
+      if (points[0] > 0)
+        points[0]--; 
+      break;
+    case 64: //decrease guest team score
+      if (points[1] > 0)
+        points[1]--;
+      break;
     case 8: //home team increment set
       sets[0]++;      
       break;
